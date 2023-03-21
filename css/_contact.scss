@@ -1,10 +1,9 @@
-@media screen and (min-width: 430px) {
+@media screen and (max-width: 430px) {
     .main-contact {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
         text-align: center;
-
         #contact-1 {
             background-color: $primaryColor;
             padding: 1rem 2rem;
@@ -76,6 +75,38 @@
             #callus {
                 border: 1.5px solid black;
                 background-color: white;
+            }
+        }
+    }
+}
+@media screen and (max-width: 393px) {
+    .main-contact {
+        #contact-1 {
+            padding: .75rem 1rem;
+            font-size: 1rem;
+            #close {
+                font-size: .85rem;
+            }
+        }
+        #contact-2 {
+            img {
+                object-fit: cover;
+                height: 14vh;
+            }
+        }
+        #contact-4 {
+            button {
+                padding: .5rem 1.5rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 375px) {
+    .main-contact {
+        #contact-4 {
+            gap: 1rem;
+            button {
+                font-size: 1.1rem;
             }
         }
     }

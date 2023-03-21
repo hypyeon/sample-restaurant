@@ -5,7 +5,7 @@
 @import './location';
 @import './contact';
 
-@media screen and (min-width: 430px) {
+@media screen and (max-width: 430px) {
     body {
         flex-direction: column;
         justify-content: space-between;
@@ -111,5 +111,40 @@
             }    
             padding-bottom: 1rem;
         }        
+    }
+}
+@media screen and (max-width: 393px) {
+    header {
+        .logo {
+            font-size: 1.45rem;
+        }
+        .ordernow {
+            padding: .5rem .65rem;
+
+        }
+    }
+}
+@media screen and (max-width: 375px) {
+    header {
+        .ordernow {
+            font-size: 1rem;
+            line-height: 1;
+        }
+    }
+    footer {
+        .follow {
+            font-size: 1rem;
+            width: 64vw;
+            padding-bottom: .25rem;
+            a {
+                padding: 0 .5rem;
+                img {
+                    width: 1.5rem;
+                }
+            }
+        }
+        #copyright {
+            font-size: .75rem;
+        }
     }
 }
