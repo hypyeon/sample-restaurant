@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Restaurant</title>
+</head>
+<body class="flex">
+    <header class="flex">
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav">
+            <li class="link">
+                <a href="./menu.html">menu</a>
+            </li>
+            <li class="link">
+                <a href="./location.html">location</a>
+            </li>
+            <li class="link">
+                <a href="#">contact</a>
+            </li>
+        </ul>
+        <div class="logo">
+            <a href="./index.html">
+                <h1>K-Food</h1>
+            </a>
+        </div>
+        <div class="ordernow">order<br>now</div>
+    </header>
+    <main class="flex main-contact">
+        <div id="contact-1">
+            <p>Open 12PM - 8PM</p>
+            <p id="close">Close on Sundays & holidays</p>
+        </div>
+        <div id="contact-2">
+            <img src="./images/koreanfood-2.jpg" alt="">
+        </div>
+        <div id="contact-3">
+            <h3>Catering Service Inquiry</h3>
+            <form class="flex" action="" method="post">
+                <div class="flex" id="i-1">
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div>
+                        <label for="number">Phone</label>
+                        <input type="number" name="number" required>
+                    </div>
+                </div>
+                <div id="i-2">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div id="i-3">
+                    <textarea class="form" name="textarea" placeholder="Please provide time, address, and size of the party! :)" required></textarea>
+                </div>
+            </form>
+        </div>
+        <div class="flex" id="contact-4">
+            <button type="submit" id="submit">Submit</button>
+            <button id="callus">
+                <a href="tel:+">Call us</a>
+            </button>
+        </div>
+    </main>
+    <footer class="flex">
+        <div class="flex follow">
+            <div>
+                <p>Follow us!</p>
+            </div>
+            <div class="flex">
+                <div>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <img src="./images/icons8-facebook-50.png" alt="Facebook">
+                    </a>
+                </div>
+                <div>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <img src="./images/icons8-instagram-50.png" alt="IG">
+                    </a>
+                </div>
+                <div>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <img src="./images/icons8-twitter-50.png" alt="Twitter">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div>Copyright &copy; 2023</div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>

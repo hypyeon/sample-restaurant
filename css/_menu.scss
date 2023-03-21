@@ -1,0 +1,55 @@
+@media screen and (min-width: 430px) {
+    .main-menu {
+        flex-direction: column;
+        align-items: center;
+        .icons {
+            position: absolute;
+            top: 24%;
+            img {
+                width: 2.25rem;
+                margin: 0 .5rem;
+            }
+        }
+        .menu {
+            margin-top: 1rem;
+            flex-direction: column;
+            width: 74vw;
+            height: 56vh;
+            justify-content: center;
+            align-items: center;
+            background-color: bisque;
+            .content {
+                width: 60vw;
+                justify-content: space-between;
+                .dish {
+                    text-align: left;
+                    line-height: 1.5;
+                    h3 {
+                        padding-bottom: .5rem;
+                        color: $primaryColor;
+                        filter: drop-shadow(1px 1px 0 rgb(255, 255, 255));
+                    }
+                    .line {
+                        position: absolute;
+                        width: 60vw;
+                        height: 1.5px;
+                        background-color: rgb(255, 255, 255);
+                    }
+                }
+                .price {
+                    text-align: right;
+                    line-height: 1.5;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                }    
+            }
+            #appetizer {
+                margin-top: .5rem;
+            }
+            #maindish {
+                padding: 1.5rem 0;
+            }
+        }
+    }
+}

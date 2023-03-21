@@ -1,0 +1,82 @@
+@media screen and (min-width: 430px) {
+    .main-contact {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+
+        #contact-1 {
+            background-color: $primaryColor;
+            padding: 1rem 2rem;
+            border-radius: .5rem;
+            color: white;
+            font-weight: 600;
+            font-size: 1.15rem;
+            #close {
+                font-size: 1rem;
+                color: beige;
+            }
+        }
+        #contact-2 {
+            img {
+                width: 70vw;
+            }
+        }
+        #contact-3 {
+            h3 {
+                color: $primaryColor;
+                padding-bottom: 1rem;
+                font-size: 1.25rem;
+            }
+            form {
+                flex-direction: column;
+                gap: .75rem;
+                input {
+                    border: 1px solid rgb(187, 187, 187);
+                    height: 1.75rem;
+                    padding: .25rem .5rem;
+                    font-family: $footerFont;
+                }
+                #i-1 {
+                    gap: 1rem;
+                    justify-content: center;
+                    input {
+                        width: 22vw;
+                    }
+                }    
+                #i-2 {
+                    input {
+                        width: 60vw;
+                    }
+                }
+                #i-3 {
+                    textarea {
+                        width: 70vw;
+                        height: 8vh;
+                        padding: .25rem .5rem;
+                        border: 1px solid rgb(187, 187, 187);
+                        font-family: $footerFont;
+                    }
+                }
+            }
+        }
+        #contact-4 {
+            gap: 1.5rem;
+            button {
+                font-family: $primaryFont;
+                letter-spacing: 1.5px;
+                padding: .75rem 2rem;
+                font-size: 1.5rem;
+            }
+            #submit {
+                border: 1.5px solid $primaryColor;
+                background-color: $primaryColor;
+                color: white;
+            }
+            #callus {
+                border: 1.5px solid black;
+                background-color: white;
+            }
+        }
+    }
+}

@@ -1,0 +1,82 @@
+@media screen and (min-width: 430px) {
+    .main-index {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 74vh;
+        text-align: center;
+        margin: 1.5rem 0;
+        #home-1 {
+            flex-direction: column;
+            p {
+                width: 46vw;
+                padding: .25rem 0;
+                font-size: 1.5rem;
+                line-height: 1.8rem;
+                font-family: $secondaryFont;
+            }
+            #healthy {
+                text-align: left;
+            }
+            #tasty {
+                text-align: center;
+            }
+            #authentic {
+                text-align: right;
+            }
+            .underline {
+                transform: rotate(90deg);
+                position: absolute;
+                top: 6rem;
+                right: 38%;
+                z-index: -1;
+                
+                #underline-1 {
+                    border: 4px solid rgba(255, 244, 236, 0.8);
+                }
+                #underline-2 {
+                    border: 4px solid rgba(255, 226, 206, 0.8);
+                }
+                #underline-3 {
+                    border: 4px solid rgba(255, 191, 146, 0.8);
+                }
+            }
+        }
+        #home-2 {
+            img {
+                width: 100vw;
+                height: 25vh;
+                object-fit: cover;
+            }
+        }
+        #home-3 {
+            display: flex;
+            width: 66vw;
+            justify-content: space-between;
+            a {
+                border: 2px solid black;
+                h3 {
+                    width: 30vw;
+                    padding: 1rem 0;
+                    text-transform: uppercase;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        #home-4 {
+            img {
+                width: 2rem;
+                height: auto;
+            }
+            p {
+                font-weight: 600;
+                color: rgb(0, 44, 26);
+                span {
+                    color: rgb(85, 85, 85);
+                    font-weight: 400;
+                    font-size: .9rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,115 @@
+@import './globals';
+@import './variables';
+@import './index';
+@import './menu';
+@import './location';
+@import './contact';
+
+@media screen and (min-width: 430px) {
+    body {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+        font-family: $primaryFont;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+    }
+    header {
+        justify-content: space-between;
+        align-items: center;
+        min-height: 16vh;
+        padding-top: 5vh;
+        background-color: $headerColor;
+        .hamburger {
+            margin-left: 1.75rem;
+            transition: 1s;
+            cursor: pointer;
+            .bar {
+                display: block;
+                width: 36px;
+                height: 3px;
+                margin: 7.5px 0;
+                background-color: black;
+                border-radius: 3px;
+            }
+        }
+        .hamburger.active .bar {
+            margin: 0;
+        }
+        .hamburger.active .bar:nth-child(2) {
+            height: 0;
+        }
+        .hamburger.active .bar:nth-child(1) {
+            transform: rotate(45deg);
+        }
+        .hamburger.active .bar:nth-child(3) {
+            transform: rotate(-45deg);
+        }
+        .nav {
+            z-index: 5;
+            left: -100%;
+            transition: .4s;
+            list-style: none;
+            text-align: center;
+            position: fixed;
+            top: 16vh;
+            height: 74vh;
+            width: 100vw;
+            background-color: $headerColor;
+            padding: 2rem 0;
+            li {
+                padding: 1.75rem 0;
+                font-size: 1.75rem;
+            }
+        }
+        .nav.active {
+            left: 0;
+        }
+        .logo {
+            color: rgb(54, 21, 0);
+            font-size: 1.65rem;
+            letter-spacing: 0;
+            filter: drop-shadow(2px 2px 2px rgb(208, 143, 136));
+            position: absolute;
+            text-align: center;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .ordernow {
+            text-transform: uppercase;
+            text-align: center;
+            background-color: rgb(255, 174, 116);
+            padding: .65rem .75rem;
+            border-radius: .25rem;
+            filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.4));
+            margin-right: 1.75rem;
+            font-weight: 600;
+        }
+    }
+    footer {
+        flex-direction: column;
+        background-color: $primaryColor;
+        min-height: 10vh;
+        align-items: center;  
+        justify-content: center;  
+        color: white;    
+        font-family: $footerFont2;
+        letter-spacing: 0;
+        font-size: .85rem;
+        .follow {
+            align-items: center;
+            justify-content: space-between;
+            width: 75vw;
+            font-family: $footerFont;
+            font-size: 1.35rem;
+            letter-spacing: 1px;
+            a {
+                padding: 0 .75rem;
+                img {
+                    width: 2rem;
+                }
+            }    
+            padding-bottom: 1rem;
+        }        
+    }
+}
