@@ -1,7 +1,18 @@
+@import './variables';
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    font-family: $primaryFont;
+    font-weight: 400;
+    letter-spacing: 1.5px;
 }
 
 a, a:hover, a:visited {

@@ -1,85 +1,165 @@
-@media screen and (max-width: 430px) {
-    .main-contact {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        text-align: center;
-        #contact-1 {
+@import './variables';
+
+.main-contact {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    #contact-1 {
+        border-radius: .5rem;
+        background-color: $primaryColor;
+        color: white;
+        font-weight: 600;
+        #close {
+            color: beige;
+        }
+    }
+    #contact-2 {
+        img {
+            width: 70vw;
+            object-fit: contain;
+        }
+    }
+    #contact-3 {
+        h3 {
+            color: $primaryColor;
+            padding-bottom: 1rem;
+        }
+        form {
+            flex-direction: column;
+            gap: .75rem;
+            input {
+                border: 1px solid rgb(187, 187, 187);
+                height: 1.75rem;
+                padding: .25rem .5rem;
+                font-family: $footerFont;
+            }
+            #i-1 {
+                gap: 1rem;
+                justify-content: center;
+                input {
+                    width: 22vw;
+                }
+            }    
+            #i-2 {
+                input {
+                    width: 60vw;
+                }
+            }
+            #i-3 {
+                textarea {
+                    width: 70vw;
+                    height: 8vh;
+                    border: 1px solid rgb(187, 187, 187);
+                    font-family: $footerFont;
+                }
+            }
+        }
+    }
+    #contact-4 {
+        gap: 1.5rem;
+        button {
+            font-family: $primaryFont;
+            letter-spacing: 1.5px;
+        }
+        #submit {
             background-color: $primaryColor;
-            padding: 1rem 2rem;
-            border-radius: .5rem;
             color: white;
-            font-weight: 600;
-            font-size: 1.15rem;
+        }
+        #callus {
+            background-color: white;
+        }
+    }
+}
+
+//tablet PC 
+@media only screen and (max-width: 1024px) {
+    .main-contact {
+        gap: 3rem;
+        #contact-1 {
+            padding: 1rem 2rem;
+            font-size: 2rem;
             #close {
-                font-size: 1rem;
-                color: beige;
+                font-size: 1.5rem;
             }
         }
         #contact-2 {
             img {
-                width: 70vw;
+                width: 60vw;
+                height: 24vh;
             }
         }
         #contact-3 {
             h3 {
-                color: $primaryColor;
-                padding-bottom: 1rem;
-                font-size: 1.25rem;
+                font-size: 2rem;
             }
             form {
-                flex-direction: column;
-                gap: .75rem;
+                font-size: 1.25rem;
                 input {
-                    border: 1px solid rgb(187, 187, 187);
-                    height: 1.75rem;
-                    padding: .25rem .5rem;
-                    font-family: $footerFont;
-                }
-                #i-1 {
-                    gap: 1rem;
-                    justify-content: center;
-                    input {
-                        width: 22vw;
-                    }
-                }    
-                #i-2 {
-                    input {
-                        width: 60vw;
-                    }
+                    font-size: 1.35rem;
+                    height: 2.25rem;
                 }
                 #i-3 {
                     textarea {
-                        width: 70vw;
-                        height: 8vh;
-                        padding: .25rem .5rem;
-                        border: 1px solid rgb(187, 187, 187);
-                        font-family: $footerFont;
+                        font-size: 1.35rem;
+                        padding: .75rem 1rem;
                     }
                 }
             }
         }
         #contact-4 {
-            gap: 1.5rem;
             button {
-                font-family: $primaryFont;
-                letter-spacing: 1.5px;
+                font-size: 2.5rem;
+                padding: 1rem 2rem;
+            }
+            #submit {
+                border: 3px solid $primaryColor;
+            }
+            #callus {
+                border: 3px solid black;
+            }
+        }
+    }
+}
+
+//mobile
+@media only screen and (max-width: 430px) {
+    .main-contact {
+        gap: 1rem;
+        #contact-1 {
+            padding: 1rem 2rem;
+            font-size: 1.15rem;
+            #close {
+                font-size: 1rem;
+            }
+        }
+        #contact-3 {
+            h3 {
+                font-size: 1.25rem;
+            }
+            form {
+                #i-3 {
+                    textarea {
+                        padding: .25rem .5rem;
+                    }
+                }
+            }
+        }
+        #contact-4 {
+            button {
                 padding: .75rem 2rem;
                 font-size: 1.5rem;
             }
             #submit {
                 border: 1.5px solid $primaryColor;
                 background-color: $primaryColor;
-                color: white;
             }
             #callus {
                 border: 1.5px solid black;
-                background-color: white;
             }
         }
     }
 }
-@media screen and (max-width: 393px) {
+@media only screen and (max-width: 393px) {
     .main-contact {
         #contact-1 {
             padding: .75rem 1rem;
@@ -101,7 +181,7 @@
         }
     }
 }
-@media screen and (max-width: 375px) {
+@media only screen and (max-width: 375px) {
     .main-contact {
         #contact-4 {
             gap: 1rem;
